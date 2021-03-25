@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+	<title>Kovalski.Dev</title>
+</head>
+
+<body onLoad = 'startTime()'>
+	<header>
+		<div class="logo" title="Енот говорит: Если у вас есть яблоко и у меня есть яблоко, и если мы обмениваемся этими яблоками, то у вас и у меня остается по одному яблоку. А если у вас есть идея и у меня есть идея и мы обмениваемся идеями, то у каждого из нас будет по две идеи."><a href="index.html" target="blank" ><img src="img/The-coon.png" alt="Coon"></a></div>
+		<p class="welcome">Добро пожаловать на мой сайт-резюме !</p>
+		<div class="hamburger-menu">
+    		<input id="menu__toggle" type="checkbox" />
+    		<label class="menu__btn" for="menu__toggle">
+      		<span></span>
+    		</label>
+
+    <ul class="menu__box">
+      	<li><a class="menu__item" href="index.html">Главная</a></li>
+			<li><a class="menu__item" href="samples.html">Примеры работ</a></li>
+			<li><a class="menu__item" href="certificates.html">Сертификаты</a></li>
+			<li><a class="menu__item" href="https://github.com/Mysterion47" target="_blank">Мой ГитХаб</a></li>
+    </ul>
+  		</div>
+	</header>
+
+	<main>
+
+		<!--Начало артикля -->
+
+		<div class="article"><h3>Сайт создан с применением технологий:</h3> 
+			<ul class="tech">
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+			</ul>
+
+			<div class="sim-slider">
+  				<ul class="sim-slider-list">
+    				<li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li>
+    				<li class="sim-slider-element"><img src="img/4.jpg" alt="0"></li>
+    				<li class="sim-slider-element"><img src="img/5.jpg" alt="1"></li>
+    				<li class="sim-slider-element"><img src="img/3.jpg" alt="1"></li>
+    			</ul>
+  				<div class="sim-slider-arrow-left"></div>
+  				<div class="sim-slider-arrow-right"></div>
+  				<div class="sim-slider-dots"></div>
+			</div>
+			<p>Сайт был разработан на чистом коде без использования фреймворков.</p>
+			<div class="line"><hr></div>
+			<div class="watch">
+  				<b>Идеальное время для Вашего ответного отклика или комментария: <span id="time"></span></b>
+			</div>
+ 		</div>
+
+		<!--Конец артикля -->
+
+		<!--Начало контента -->
+
+		<div class="content">
+			<h3>На данной странице находятся примеры моих работ выполненных ранее:</h3>
+			<div class="examples">
+				<img src="img/exp1.PNG" alt="пример работы 1">
+				<img src="img/exp2.PNG" alt="пример работы 2">
+				<img src="img/exp3.PNG" alt="пример работы 3">
+				<img src="img/exp4.PNG" alt="пример работы 4">
+					<a class="up" id="upbutton" href="#" onclick="smoothJumpUp(); return false;">Наверх
+</a>
+			</div>
+		</div>
+
+		<!--Конец контента -->
+
+		<!--Начало карточки -->
+
+		<div class="aside">
+			<div class="profile__card">
+    			<div class="card__header">
+      			<div class="card__pic">
+       				 <img src="img/me.JPG" alt="фотография меня">
+      			</div>
+      	<div class="name__card">Никита Коваль</div>
+	      <div class="desc">Starting Developer</div>
+	      <div class="sm">
+        <a href="https://rostov.hh.ru/resume/418df298ff07e3f22d0039ed1f4168416c7061" target="_blank">hh</a>
+        <a href="https://vk.com/budu_szit_poka_ne_umru" target="_blank">vk</a>
+      	</div>
+      	<div class="date">23 years old, Taganrog</div>
+    			</div>
+  			</div>
+		</div>
+
+		<!--Конец карточки -->
+
+
+	</main>
+	<footer>
+		<span>Сделано в SublineText 3<span><img src="img/sublime.png" width="20" height="20"></span></span>
+		<ul class="contact">
+		<li><a href="mailto:kovalski.dev@gmail.com" target="_blank"><span><img src="img/Create-Gmail-Account_large.png" width="20" height="13"></span>kovalski.dev@gmail.com</a></li>
+		<li><a href="tel:+79508486663" target="_blank"><span> <img src="img/Telegram_calls-768x768.png" width="20" height="20">+7 (950) 848-66-63</a></span></li>
+		</ul>
+	</footer>
+
+	<script src="js/slider.js"></script>
+	<script src="js/watch.js"></script>
+	<script src="js/up__button.js"></script>
+</body>
+</html>
